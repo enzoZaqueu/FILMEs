@@ -8,7 +8,7 @@ Projeto construído junto ao evento Next Level Week da Rocketseat.
 
 ## Link para acesso
 
-[Clique aqui!](https://enzozaqueu.github.io/favecine/){:target="_blank"}
+[Clique aqui!](https://enzozaqueu.github.io/favecine/)
 
 ## Tecnologias
 

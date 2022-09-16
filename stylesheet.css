@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    font-family: "Inter", sans-serif;
+    background-color: #121214;
+}
+
+header {
+    max-width: 580px;
+    width: 90%;
+    height: 130px;
+    margin: 24px auto;
+}
+
+header div {
+    width: 130px;
+    height: 130px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 100%;
+    margin: auto;
+    display: flex;
+
+    transition: transform 0.3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+
+header div img {
+    width: 120px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 24px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 12px;
+}
+
+section div {
+    background-color: #2A2634;
+    border-radius: 8px;
+    padding: 32px;
+    padding-top: 24px;
+}
+
+section h1 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 200%;
+}
+
+section p {
+    color: #A1A1AA;
+    line-height: 200%;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin-top: 24px;
+
+    flex-wrap: wrap;
+}
+
+li img{
+    max-width: 120px;
+    border-radius: 8px;
+    width: 90px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+/* animação */
+
+header div {
+    animation: 1s .3s backwards descendo;
+}
+
+@keyframes descendo {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subindo {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section:nth-child(1) {
+    animation: 1s .6s backwards subindo;
+
+}
+
+section:nth-child(2) {
+    animation: 1s .9s backwards subindo;
+
+}
+
+section:nth-child(3) {
+    animation: 1s 1.2s backwards subindo;
+
+}
